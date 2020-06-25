@@ -1,0 +1,146 @@
+
+<head>
+	<title>Details about Tales Dash</title>
+	<link type="text/css" rel="stylesheet" href="/style.css"/>
+	<meta charset="utf-8"/>
+</head>
+	
+<body>
+	<div class="titlebox">
+		<h1>테일즈 대쉬 상세 정보</h1>
+	</div>
+	
+	<div class="contents">
+		<div class="contentbox-single">
+			<p>테일즈 대쉬에는 여러 요소들이 존재합니다.
+			게임 속에서 마주치게 될 환경과 오브젝트들에는 다음과 같은 것들이 있습니다.</p>
+		</div>
+		
+		
+		<div class = "list-container">
+			<div class="dual-container">
+			
+				<div class="contentbox-dual-left">
+					<img class = "smallImg" src="img_tile.png" />
+				</div>
+			
+			
+				<div class="contentbox-dual-right">
+					<ul type = "circle">
+						<li><strong>타일</strong>
+							<p>캐시가 탐험하는 월드들에 존재하는 길들입니다. 캐시는 여러 월드들에 있는 보석과 별들을 모으기 위해 이 타일들 위를 달리며 월드들을 탐험합니다. 하지만 삐끗해서 떨어진다면... 상상도 하기 싫군요. 캐시를 도와서 떨어지지 않고 월드들을 탐험할 수 있게 해줘야해요!
+							</p>
+						</li>
+					</ul>
+
+				</div>
+			
+			</div>
+
+			<div class="dual-container">
+			
+				<div class="contentbox-dual-left">
+					<%= image_tag("img_narrow.png", :alt => "image explanation", :class => "smallImg") %>
+				</div>
+			
+			
+				<div class="contentbox-dual-right">
+					<ul type = "circle">
+													
+						<li><strong>좁은 타일</strong>
+							<p>일반 타일보다 더 폭이 좁은 타일들입니다. 보다 정확하게 가운데로 캐시를 달리게 하지 않으면 떨어지겠죠? 조심하세요!
+							</p>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="dual-container">
+			
+				<div class="contentbox-dual-left">
+					<%= image_tag("img_rabbit.png", :alt => "image explanation", :class => "smallImg") %>
+				</div>
+			
+			
+				<div class="contentbox-dual-right">
+					<ul type = "circle">
+						<li><strong>토끼 타일</strong>
+							<p>귀엽게 보이는 타일이지만 그 기능은 마냥 귀엽지만은 않습니다. 캐시에게 마법의 토끼띠를 씌우거든요. 마법의 토끼띠까지 했는데 빠르게 달리지 않을 수는 없잖아요?
+							</p>
+						
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="dual-container">
+			
+				<div class="contentbox-dual-left">
+					<%= image_tag("img_gate.jpg", :alt => "image explanation", :class => "smallImg") %>
+				</div>
+			
+			
+				<div class="contentbox-dual-right">
+					<ul type = "circle">
+						<li><strong>차원문</strong>
+							<p>월드와 월드를 이어주는 차원문입니다. 여기를 통과하면 캐시는 다른 지난 스테이지를 클리어하고 다음 스테이지로 넘어가게 됩니다.
+							</p>
+						
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="dual-container">
+			
+				<div class="contentbox-dual-left">
+					<%= image_tag("img_jewel.png", :alt => "image explanation", :class => "smallImg") %>
+				</div>
+			
+			
+				<div class="contentbox-dual-right">
+					<ul type = "circle">
+						<li><strong>보석</strong>
+							<p>월드에 존재하는 보물입니다. 캐시의 목표는 이 보석들을 모두 모으는 것! 모든 보석들을 모으면 왕관도 얻을 수 있습니다.
+							</p>
+						
+						</li>
+						
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="dual-container">
+			
+				<div class="contentbox-dual-left">
+					<%= image_tag("img_star.png", :alt => "image explanation", :class => "smallImg") %>
+				</div>
+			
+			
+				<div class="contentbox-dual-right">
+					<ul type = "circle ">
+						<li><strong>별</strong>
+							<p>보석과 같이 월드에 존재하는 보물입니다. 보석보다 수는 적지만 그만큼 희귀하고 중요한 보물들이죠. 각 스테이지에는 별이 세 개씩 있습니다.
+							</p>
+						
+						</li>
+						
+					</ul>
+
+				</div>
+				
+			</div>	
+			
+		</div "list container">
+	</div>
+	
+	<div class = "endbox">
+		
+		<p> <%= link_to "처음으로", main_index_path %>  </p>
+	</div>
+	
+</body>

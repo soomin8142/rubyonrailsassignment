@@ -1,0 +1,125 @@
+:root {/*for color customization*/
+	--TDorange: #ffad20;
+	--TDgrassgreen: #c0e968;
+	--TDyellow: #ffef9f;
+	--TDbeige: #eae3ca;
+	--AlohaPink: #e4007f;
+	
+}
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+	min-height : 100px;
+	height : auto;
+	padding : 10px, 0;
+}
+
+ol li {
+	min-height : 50px;
+	height : auto;
+	padding : 10px, 0;
+}
+
+a:hover{
+	color : var(--AlohaPink);
+	text-decoration : blink;
+}
+
+#introdescription{
+	
+	font-style : italic;
+	
+}
+
+
+.bigImg {
+  max-width:300px;
+  max-height:300px;
+  width: auto;
+  height: auto;
+}
+
+.smallImg {
+  max-width:150px;
+  max-height:150px;
+  width: auto;
+  height: auto;
+}
+
+.titlebox {
+	padding : 0 20%;
+	background-color : var(--TDorange);
+	
+}
+
+
+.titlebox h1{
+	text-align : center;
+	margin: 0;
+}
+
+
+.endbox{
+	padding : 10px 20%;
+	background-color : lightgray;
+}
+
+
+.contents{
+	background-color : var(--TDyellow);
+	
+}
+
+.contentbox-single{
+	padding : 20px 20%;
+}
+
+.dual-container {
+	display : flex;
+	padding : 20px 15%;
+	justify-content : center;
+	
+}
+
+.contentbox-dual-left{
+	display : flex;
+	justify-content : right;
+	order : 1;
+	width : 20%;
+	padding-left : 5%;
+	padding-right : 20px;
+	align-items : center;
+}
+
+
+.contentbox-dual-right{
+	display : flex;
+	order : 2;
+	width : 50%;
+	padding-left : 20px;
+	padding-right : 5%;
+	align-items : center;
+	background-color : var(--TDbeige);
+}
+
+
+.contentbox-dual-mono{
+	display : flex;
+	flex-direction : column;
+	justify-content : center;
+	align-items : center;
+	width : 33%;
+	padding : 20px 20px;
+	background-color : var(--TDbeige);
+	
+}
+
+.list-container {
+	display : flex;
+	flex-direction : column;
+}

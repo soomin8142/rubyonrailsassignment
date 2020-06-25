@@ -1,0 +1,86 @@
+
+<head>
+	<title> Introducing Tales Dash! </title>
+	<link type="text/css" rel="stylesheet" href="/style.css"/>
+	<meta charset="utf-8"/>
+</head>
+
+<body>
+	
+	<div class = "titlebox">
+		<h1>테일즈 대쉬를 소개합니다! </h1>
+	</div>
+	
+	<div class = "contents">
+		
+		<div class = "dual-container">
+		
+			<div class = "contentbox-dual-left">
+				<img class = "smallImg" src="https://lh3.googleusercontent.com/jcja4htRwN5pda9KzZ65RjIbaEQph4_0dR95_-EP3p59u0PY65zfg0OLJ84Zubr2nQ=s360" />
+				
+			</div>
+	
+			<div class = "contentbox-dual-right" id= "introdescription"> 			
+				<p>테일즈 대쉬 (<strong>Tales Dash</strong>)는 모바일 게임 회사 <span style="color:#E4007F"><strong>알로하팩토리</strong></span>에서 개발한 모바일 게임입니다. 4월 2일에 출시된 따끈따끈한 신작이지요. 본 페이지에서는 테일즈 대쉬의 기획자인 제가 테일즈 대쉬를 소개하는 시간을 가져보도록 하겠습니다.
+				</p>
+			</div>
+		</div>	
+		
+		
+		<div class = "contentbox-single">
+			<p>테일즈 대쉬는 간단한 <%= link_to "하이퍼캐주얼 장르", main_hypcasual_path %>의 게임으로, 주인공인 트레져 헌터 캐시를 조작해서 떨어지지 않고 여러 월드들을 모험하는 게임입니다. 테일즈 대쉬는 하이퍼캐주얼 게임답게 매우 간단한 조작을 가지고 있습니다. 탭. 오직 탭 뿐이지요.
+			</p>
+			
+			<p>게임의 진행은 아래와 같습니다.
+			</p>
+		</div>
+		
+		<div class = "dual-container">
+			<div class = "contentbox-dual-left">
+				<img class = "bigImg" src="https://lh3.googleusercontent.com/zHnx4uoCe-IGmfTKMRCRmAMVV1VauIpQ6Ff8QEJ9P6QDfPVfKcvW25cGHGoneDJ38g=w3072-h1500"  />
+			</div>
+			
+			<div class = "contentbox-dual-right">
+				<ol type="1" >
+					<li>게임을 시작하면 캐시가 길을 따라 달려나갑니다.</li>
+					<li>방향을 틀거나 점프를 해야하는 순간이 왔을 때 탭을 하면 상황에 맞는 액션을 취할 수 있습니다.</li>
+					<li>앞의 길을 잘 살피며 적절한 타이밍에 탭 액션을 성사시켜 캐시를 추락시키지 않고 계속 달리게 합니다.</li>
+					<li>스테이지를 클리어하면 다음 스테이지인 다른 월드로 이어지며 게임은 계속됩니다.</li>
+					<li>???</li>
+					<li>PROFIT!</li>
+				</ol>
+			</div>
+		</div>
+	
+		<div class = "contentbox-single">
+			<p>이처럼 매우 간단한 게임 방식을 가지고 있지만, 게임 내에서 등장하는 여러가지 환경과 수집요소들은 직관적이고도 재미있는 조작법과 맞물려 나름의 깊이있는 경험을 할 수 있게 해줍니다. 보다 세부적인 게임 설명은 <%= link_to "다음페이지", main_details_path %> 에서 알아보실 수 있습니다.
+			</p>
+			
+		</div>
+		
+		
+		
+		<div class = "contentbox-single" id="comment_section">
+            <h2>게임에 대한 코멘트를 남겨주세요!</h2>
+            <% @comments.each do |comment| %>
+                <p><%= comment.comment %></p>
+            <% end %>
+            
+            <%= form_for :comment, url: '/comment/store', local: true do |form| %>
+            <div class="form-group">
+                <%= form.label :comment %>
+                <%= form.text_field :comment %>
+                <%= form.submit %>
+            </div>
+
+            <% end %>
+        </div>  
+		
+	</div>
+	
+	<div class = "endbox">
+		
+		<p style = "font-size:20px; font-family:Sans">Tales Dash가 궁금하시다면? <a href="https://play.google.com/store/apps/details?id=kr.co.alohacorp.talesdash&hl=en_us"> 다운로드하기!</a>(google play only)</p>
+	</div>
+
+</body>
